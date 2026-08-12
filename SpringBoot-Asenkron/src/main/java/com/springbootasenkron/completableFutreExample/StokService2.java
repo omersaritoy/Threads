@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.concurrent.CompletableFuture;
 
 @Service
-public class StokService {
+public class StokService2 {
 
     @Async
     public CompletableFuture<Integer> stokKontrolEt(String urunId) {
@@ -51,10 +51,10 @@ class FiyatService {
 
 @Service
  class UrunService {
-    private final StokService stokService;
+    private final StokService2 stokService;
     private final FiyatService fiyatService;
 
-    UrunService(StokService stokService, FiyatService fiyatService) {
+    UrunService(StokService2 stokService, FiyatService fiyatService) {
         this.stokService = stokService;
         this.fiyatService = fiyatService;
     }
