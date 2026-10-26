@@ -12,7 +12,7 @@ Her process'in kendine ait:
 
 Thread:Bir process'in içinde çalışan, o process'in kaynaklarını paylaşan bir yürütme birimidir. Yani thread, process'in "alt işçisi" gibi düşünülebilir.
 Senin Main.java dosyanı çalıştırdığında, JVM bir process başlatır ve bu process içinde en az bir thread (main thread) otomatik oluşur.
-Sen new Thread(() -> {...}).start() dediğinde, aynı process içinde ikinci bir thread daha oluşturmuş oluyorsun.
+Sen new Thread(() -> {...}).start() dediğinde, aynı process içinde ikinci bir thread daha oluşturmuş oluyoruz.
 
 
 # Thread Nasıl Oluşturulur ve Yaşam Döngüsü
